@@ -1,0 +1,96 @@
+@import "../scss/libs.scss";
+@import "../scss/fonts.scss";
+@import "../scss/vars.scss";
+@import "../scss/reset.scss";
+
+
+body {
+	font-family: $fonts, $fonts2;
+	font-size: 16px;
+	min-width: 320px;
+	height: 100vh;
+	position: relative;
+	line-height: 1.5;
+	overflow-x: hidden;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.container {
+	
+
+}
+
+.row {
+	border: 2px solid green;
+	height: 340px;
+	
+}
+
+.slide {
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	transition: 0.3s ease-in-out;
+
+}
+
+.slide img {
+	display: block;
+	background-size: cover;
+	width: 100%;
+	height: 337px;
+	margin-left: 105px;
+	transition: 0.3s ease-in-out;
+}
+
+.wrapper {
+	width: 800px;
+	height: 400px;
+	border: 2px solid burlywood;
+	position: relative;
+	box-sizing: border-box;
+	margin: 0 auto;
+	top: 20%;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.b_b {
+   width: 165px;
+   right: 20px;
+   bottom: 10px;
+   position: absolute;
+   box-sizing: border-box;
+}
+
+.b_b button {
+	border: 2px solid rgb(80, 155, 80);
+	border-radius: 5px;
+    padding: 5px;
+	outline: none;
+	width: 80px;
+}
+
+.b_b button:hover {
+	background: #ccbbaa;
+	
+}
+
+.b button {
+	outline: none;
+	border: none;
+}
+
+
+
+
+
+@import "../scss/media"; // Always at the end
