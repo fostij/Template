@@ -1,1 +1,74 @@
 @import "../scss/_vars";
+
+
+@media (max-width: 880px) {
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__logo {
+        position: relative;
+        left: 52px;
+    }
+
+    .inform {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    
+    .inform__screen {
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+    }
+
+    .inform__text {
+        text-align: center;
+    }
+
+    .strategy__title {
+        text-align: center;
+    }
+
+    .strategy__text {
+        text-align: center;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .item__img {
+        margin: 0 auto;
+        width: 40%
+    }
+
+    .item__text {
+        text-align: center;
+    }
+
+    .text_title {
+        text-align: center;
+    }
+
+    .text_inform {
+        text-align: center;
+    }
+
+    #show {
+        display: block;
+        position: absolute;
+        top: 88%;
+        right: -20px;
+    }
+
+  }

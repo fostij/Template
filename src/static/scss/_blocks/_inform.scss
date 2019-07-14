@@ -1,0 +1,51 @@
+// Стилі для інформаційного контенту
+.inform {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    padding: 20px 30px;
+    background: $screenContent;
+}
+
+.inform button {
+    transition: .8s;
+}
+
+.inform__screen {
+    background: $screenBackground url(../../img/screen.png) no-repeat center center;
+    float: left;
+    width: 380px;
+    height: 230px;
+    margin-right: 20px;
+}
+
+.inform__title {
+    font: 22px 'TahomaBold', sans-serif;
+    color: $title;
+}
+
+.inform__shop {
+    font: 14px 'TimesNewRomanRegular', sans-serif;
+    color: $text;
+    line-height: 18px;
+    margin-top: 10px;
+}
+
+.inform__button {
+    font: 13px 'TahomaRegular', sans-serif;
+    text-align: center;
+    color: $colorTextButton;
+    padding: 10px 35px;
+    margin-top: 15px;
+    background: linear-gradient(0deg, #701a1a, #ef1203);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+        background: linear-gradient(0deg, #d30000, #dd5d5d);
+        color: $title;
+        font-weight: bold;
+    }
+}

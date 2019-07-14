@@ -1,0 +1,50 @@
+// Стилі для Шапки 
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background: $background;
+}
+
+.header__logo {
+   float: left;
+
+}
+
+.header__nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__list {
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.header__link {
+ position: relative;
+ font: 16px 'TahomaBold', sans-serif;
+ color: $title;
+ text-decoration: none;
+ cursor: pointer;
+ transition: .5s;
+    &:hover {
+      color: $linkHoverText;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      transition: .4s;
+      background: $linkHover;
+    }
+    &:hover:before {
+      width: 100%;
+    }
+}

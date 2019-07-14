@@ -1,0 +1,62 @@
+// Стилі для контентної стратегії
+.strategy {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 20px 0 120px 0;
+}
+
+.strategy__title {
+    font: 18px 'TahomaBold', sans-serif;
+    color: $title;
+}
+
+.strategy__text {
+    font: 14px 'TimesNewRomanRegular', sans-serif;
+    color: $text;
+    line-height: 18px;
+    margin-top: 5px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 40px;
+
+}
+
+.item__img {
+    position: relative;
+    float: left;
+    clear: both;
+    margin-right: 12px;
+    max-width: 100%;
+}
+
+.item__text {
+    font: 14px 'TimesNewRomanItalic', sans-serif;
+    color: $title;
+    position: relative;
+    float: right;
+}
+
+.description {
+    margin-top: 50px;
+}
+
+.description__text {
+    margin-bottom: 25px;
+}
+
+.text_title {
+    font: 18px 'TahomaBold', sans-serif;
+    color: $title;
+    margin-bottom: 8px;
+}
+
+.text_inform {
+    font: 14px 'TimesNewRomanRegular', sans-serif;
+    color: $text;
+}

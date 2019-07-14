@@ -1,15 +1,9 @@
 @import "../scss/_mixins/font-face";
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 
-//@include font-face('opensans', 'fonts/OpenSans/');
-//@include font-face('opensans', 'fonts/OpenSans/OpenSansBold');
-//@include font-face('opensans', 'fonts/OpenSans/OpenSansRegular');
-//@include font-face('opensans', 'fonts/OpenSans/OpenSansSemibold');
-//@include font-face('opensans', 'fonts/OpenSans, bold, italic');
-//@include font-face('opensans', 'fonts/OpenSans, null, null, woff');
-//@include font-face('opensans', 'fonts/OpenSans, 500, normal, eot woff2 woff');
 
 //FontAwesome
+
 @font-face {
   font-family: "webfonts";
   src: url("../fonts/webfonts/fa-brands-400.eot");
@@ -49,37 +43,49 @@
 
 }
 
-//OpenSans
+// TimesNewRoman
 
 @font-face {
-  font-family: "OpenSansRegular";
-  src: url("../fonts/OpenSans/OpenSansRegular.eot");
-  src: url("../fonts/OpenSans/OpenSansRegular.eot?iefix")format("embedded-opentype"),
-  url("../fonts/OpenSans/OpenSansRegular.woff")format("woff"),
-  url("../fonts/OpenSans/OpenSansRegular.ttf")format("truetype");
+  font-family: "TimesNewRomanRegular";
+  src: url("../fonts/TimesNewRoman/TimesNewRomanRegular/TimesNewRomanRegular.eot");
+  src: url("../fonts/TimesNewRoman/TimesNewRomanRegular/TimesNewRomanRegular.eot?iefix")format("embedded-opentype"),
+  url("../fonts/TimesNewRoman/TimesNewRomanRegular/TimesNewRomanRegular.woff")format("woff"),
+  url("../fonts/TimesNewRoman/TimesNewRomanRegular/TimesNewRomanRegular.ttf")format("truetype");
   font-style: normal;
   font-weight: normal;
 
 }
 
 @font-face {
-  font-family: "OpenSansBold";
-  src: url("../fonts/OpenSans/OpenSansBold.eot");
-  src: url("../fonts/OpenSans/OpenSansBold.eot?iefix")format("embedded-opentype"),
-  url("../fonts/OpenSans/OpenSansBold.woff")format("woff"),
-  url("../fonts/OpenSans/OpenSansBold.ttf")format("truetype");
+  font-family: "TimesNewRomanItalic";
+  src: url("../fonts/TimesNewRoman/TimesNewRomanItalic/TimesNewRomanItalic.eot");
+  src: url("../fonts/TimesNewRoman/TimesNewRomanItalic/TimesNewRomanItalic.eot?iefix")format("embedded-opentype"),
+  url("../fonts/TimesNewRoman/TimesNewRomanItalic/TimesNewRomanItalic.woff")format("woff"),
+  url("../fonts/TimesNewRoman/TimesNewRomanItalic/TimesNewRomanItalic.ttf")format("truetype");
   font-style: normal;
   font-weight: normal;
 
 }
 
+// Tahoma
 
 @font-face {
-  font-family: "OpenSansSemibold";
-  src: url("../fonts/OpenSans/OpenSansSemibold.eot");
-  src: url("../fonts/OpenSans/OpenSansSemibold.eot?iefix")format("embedded-opentype"),
-  url("../fonts/OpenSans/OpenSansSemibold.woff")format("woff"),
-  url("../fonts/OpenSans/OpenSansSemibold.ttf")format("truetype");
+  font-family: "TahomaBold";
+  src: url("../fonts/Tahoma/Tahoma-Bold.eot");
+  src: url("../fonts/Tahoma/Tahoma-Bold.eot?iefix")format("embedded-opentype"),
+  url("../fonts/Tahoma/Tahoma-Bold.woff")format("woff"),
+  url("../fonts/Tahoma/Tahoma-Bold.ttf")format("truetype");
+  font-style: normal;
+  font-weight: normal;
+
+}
+
+@font-face {
+  font-family: "TahomaRegular";
+  src: url("../fonts/Tahoma/Tahoma.eot");
+  src: url("../fonts/Tahoma/Tahoma.eot?iefix")format("embedded-opentype"),
+  url("../fonts/Tahoma/Tahoma.woff")format("woff"),
+  url("../fonts/Tahoma/Tahoma.ttf")format("truetype");
   font-style: normal;
   font-weight: normal;
 

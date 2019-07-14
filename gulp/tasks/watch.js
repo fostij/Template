@@ -1,7 +1,7 @@
 module.exports = function(){
     // Слежка за змінами в файлах
     $.gulp.task('watch', function(){
-        $.gulp.watch('src/pug/**/*.html', $.gulp.series('html')),
+        $.gulp.watch('src/html/**/*.html', $.gulp.series('html')),
         $.gulp.watch('src/static/scss/**/*.scss', $.gulp.series('sass')),
         $.gulp.watch('src/static/js/**/*.js', $.gulp.series('js')),
         $.gulp.watch('src/static/js/**/*.js', $.gulp.series('script:lib')),

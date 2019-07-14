@@ -1,34 +1,31 @@
 'use strict';
 global.$ = {
-    gulp:         require('gulp'),
-    pug:          require('gulp-pug'),// Шаблонізатор HTML
-    gp:           require('gulp-load-plugins')(),//Дає зможливість не перечисляти всі плагіни а визивати їх через gp
-    sass:         require('gulp-sass'),// Компілятор
-    minifycss:    require('gulp-csso'),//Оптимізує і мініфікує сss код
-    concat:       require('gulp-concat'),// Зєднує всі файли в один
-    autoprefixer: require('gulp-autoprefixer'),// Проставляє префікси в сss
-    sourcemaps:   require('gulp-sourcemaps'),// Створює карту по файлу
-    uglify:       require('gulp-uglyfly'),// Мініфікатор JS
-    notify:       require('gulp-notify'),// Увідомляє про ошибки в файлах
-    watch:        require('gulp-watch'),// Слежка за змінами в файлах
-    browserSync:  require('browser-sync').create(),// Автообновлення всіх змін в файлах і показ в браузері   
-    cli:          require('gulp-cli'),// позволяет использовать разные версии gulp.
-    del:          require('del'),//Видалення папки dist після зборки
-    cache:        require('gulp-cache'),//Очищення кешу
-    ftp:          require('vinyl-ftp'),// Отправка проекту на сервер
-    util:         require('gulp-util'),// логирование, подсветка вывода в консоли, и так далее
-    rename:       require('gulp-rename'),//  переименования файлов.
+    gulp:         require('gulp'), // Таск Менеджер
+    sass:         require('gulp-sass'), // Компілятор sass/scss коду
+    minifycss:    require('gulp-csso'), //Оптимізує і мініфікує сss код
+    concat:       require('gulp-concat'), // Зєднує всі файли в один
+    autoprefixer: require('gulp-autoprefixer'), // Проставляє префікси в сss
+    sourcemaps:   require('gulp-sourcemaps'), // Створює карту по файлу
+    uglify:       require('gulp-uglyfly'), // Мініфікатор файлів
+    notify:       require('gulp-notify'), // Увідомляє про ошибки в файлах
+    watch:        require('gulp-watch'), // Слежка за змінами в файлах
+    browserSync:  require('browser-sync').create(), // Автооновлення всіх змін в файлах і відображення в браузері   
+    cli:          require('gulp-cli'), // Допомагає використовувати разні версии gulp.
+    del:          require('del'), //Видалення папки dist після зборки
+    cache:        require('gulp-cache'), //Очищення кешу
+    ftp:          require('vinyl-ftp'), // Отправка проекту на сервер
+    util:         require('gulp-util'), // Логирование, подсветка вывода в консоли, и так далее
+    rename:       require('gulp-rename'), //  Переименования файлов.
     // Мініфікатори для зображень
-    imagemin:     require('gulp-imagemin'),//Мініфікація картинок
-    jpegtran:     require('imagemin-jpegtran-gfw'),// Jpeg,jpg
-    pngquant:     require('imagemin-pngquant-gfw'),// png
+    imagemin:     require('gulp-imagemin'), //Мініфікація картинок
+    jpegtran:     require('imagemin-jpegtran-gfw'), // Jpeg,jpg
+    pngquant:     require('imagemin-pngquant-gfw'), // png
     // Мініфікатори для зображень svg
-    cheerio:      require('gulp-cheerio'),// Маніпуляція з HTML and XML файлами
-    replace:      require('gulp-replace'),// Заміна назви строк файлів і вивід їх в поток
-    svgSprite:    require('gulp-svg-sprite'),// Створення спрайту з svg
-    svgmin:       require('gulp-svgmin'),// Оптимізація svg
-    //filter:       require('gulp-filter'),//Сортує документи по назві документа
-    bower:        require('bower'),// Установка плагінів, бібліотек та ін.
+    cheerio:      require('gulp-cheerio'), // Маніпуляція з HTML and XML файлами
+    replace:      require('gulp-replace'), // Заміна назви строк файлів і вивід їх в поток
+    svgSprite:    require('gulp-svg-sprite'), // Створення спрайту з svg
+    svgmin:       require('gulp-svgmin'), // Оптимізація svg
+    bower:        require('bower'), // Установка плагінів, бібліотек та ін.
     path: {
         tasks:    require('./gulp/config/tasks.js')
     }
@@ -58,6 +55,7 @@ $.gulp.task('cacheclear', function(){
     
 ));
 
+// Отправка готового продакшену на сервер
 $.gulp.task( 'deploy', function () {
  
     var conn = $.ftp.create( {

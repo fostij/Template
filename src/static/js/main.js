@@ -1,41 +1,27 @@
-let slide = document.querySelectorAll('.img-item'),
-    back  = document.querySelector('.back'),
-    next  = document.querySelector('.next'),
-    slideIndex = 1;
+'use strict';
 
-    showSlides(slideIndex);
-    
-    function showSlides(n){
+// //Add a class when clicking on the menu 
+//  let hamburger = document.querySelector('.c__hamburger').addEventListener('click', function(e){
 
-    if(n > slide.length){
-    slideIndex = 1;
-   }
+//     e.preventDefault(); // Stop somthing
+//     this.classList.toggle('is_active');// Checking for a class is active if there is something doing
 
-    if(n < 1){
-    slideIndex = slide.length;
-   }
+//     if(this.classList.contains('is_active')){
+//     // Hide menu
+//     this.classList.remove('is_active');
+//     document.querySelector('#menu').classList.remove('nav_active');
+//     document.body.classList.remove('body_active');
+//     }else{
+//     // Show menu
+//     this.classList.add('is_active');
+//     document.querySelector('#menu').classList.add('nav_active');
+//     document.body.classList.add('body_active');
+//     }
+//  });
 
-      slide.forEach((item) => item.style.display = "none");
-      //for(let i = 0; i > slide.length; i++){// Це аналог верхньої функції
-         // slide[i].style.display = 'none';
-      //}
-     slide[slideIndex - 1].style.display = 'block';
-    }
-   
-    function plusSlides(n){
-      showSlides(slideIndex += n);
-     }
-     function currentSlide(n){
-          showSlides(slideIndex = n);
-     }
-  
-     back.addEventListener('click', function(){
-      plusSlides(-1);
-     });
-  
-     next.addEventListener('click', function(){
-      plusSlides(1);
-     });
+var btn = document.getElementById('show');
+var nav = document.getElementById('nav');
 
-
-
+btn.addEventListener('click', function() {
+    nav.classList.toggle('active');
+});
