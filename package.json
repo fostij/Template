@@ -38,7 +38,7 @@
     "imagemin-pngquant": "^7.0.0",
     "imagemin-pngquant-gfw": "^0.2.0",
     "imagemin-svgo": "^7.0.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "slick-carousel": "^1.8.1",
     "vinyl-ftp": "^0.6.1"
   }
